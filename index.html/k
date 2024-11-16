@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSE Aztecs</title>
-  <!-- Correct path to style.css in 'l/k' subfolder -->
-  <link rel="stylesheet" href="style.css/l/k/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSE Aztecs</title>
+    <link rel="stylesheet" href="style.css/k/style.css"> <!-- Corrected path for style.css -->
 </head>
 <body>
-  <h1>Welcome to CSE Aztecs</h1>
+    <header>
+        <h1>Welcome to CSE Aztecs</h1>
+    </header>
 
-  <div id="post-container">
-    <!-- Posts will go here -->
-  </div>
+    <main>
+        <section>
+            <h2>Our Mission</h2>
+            <p>The CSE Aztecs are a team of dedicated students passionate about technology and innovation.</p>
+        </section>
 
-  <button id="post-button">Post</button>
-  <textarea id="post-text"></textarea>
+        <section>
+            <h2>Our Projects</h2>
+            <p>Explore our latest projects, designed to bring the best of technology to the world.</p>
+        </section>
+    </main>
 
-  <!-- Correct path to app.js in 'l' folder -->
-  <script src="l/app.js"></script>
+    <footer>
+        <p>&copy; 2024 CSE Aztecs</p>
+    </footer>
+
+    <script src="app.js/l/app.js"></script> <!-- Corrected path for app.js -->
 </body>
 </html>
+
+
 
