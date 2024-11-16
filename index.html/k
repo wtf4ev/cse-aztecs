@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSE Aztecs</title>
+  <!-- Correct path to style.css in 'l/k' subfolder -->
+  <link rel="stylesheet" href="style.css/l/k/style.css">
+</head>
+<body>
+  <h1>Welcome to CSE Aztecs</h1>
+
+  <div id="post-container">
+    <!-- Posts will go here -->
+  </div>
+
+  <button id="post-button">Post</button>
+  <textarea id="post-text"></textarea>
+
+  <!-- Correct path to app.js in 'l' folder -->
+  <script src="l/app.js"></script>
+</body>
+</html>
+

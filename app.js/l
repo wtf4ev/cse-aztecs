@@ -1,0 +1,31 @@
+// Select elements by their IDs
+const postButton = document.getElementById('post-button');
+const postText = document.getElementById('post-text') as HTMLTextAreaElement;  // Cast it to HTMLTextAreaElement
+const feed = document.getElementById('feed');
+
+// Add a null check for postButton, postText, and feed
+if (postButton && postText && feed) {
+  // Handle the "Post" button click
+  postButton.addEventListener('click', function() {
+    // Get the value from the textarea and remove any extra spaces
+    const newPostText = postText.value.trim();  // Now TypeScript knows 'value' exists on postText
+    
+    // If the textarea is not empty
+    if (newPostText) {
+      // Create a new div element for the post
+      const newPost = document.createElement('div');
+      newPost.classList.add('post');  // Add a class to style it
+      
+      // Add the post text to the new div
+      newPost.textContent = newPostText;
+
+      // Append the new post to the feed section
+      feed.appendChild(newPost);
+
+      // Clear the textarea after posting
+      postText.value = '';
+    }
+  });
+} else {
+  console.error('One or more elements were not found in the DOM!');
+}
